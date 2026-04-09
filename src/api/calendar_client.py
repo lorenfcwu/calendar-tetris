@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta, timezone
-from auth import get_calendar_service
+from api.auth import get_calendar_service
 
 def get_upcoming_events(service, days=7):
     # Create an 'aware' UTC datetime

@@ -15,10 +15,10 @@ class CalendarEvent:
     title: str
     start: datetime
     end: datetime
-    attendees: List[Attendee] = field(default_factory=list)
     is_organizer: bool
     is_all_day: bool
     original_json: dict
+    attendees: List[Attendee] = field(default_factory=list)
     disruption_score: float = 0.0
 
     @property
